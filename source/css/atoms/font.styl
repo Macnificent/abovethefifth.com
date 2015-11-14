@@ -1,0 +1,26 @@
+.font-heading
+	font-family Verdana, Geneva, sans-serif
+
+.font-paragraph
+	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+
+.bold
+	font-weight bold
+
+h1, h2, h3
+	@extend .font-heading,
+			.bold
+
+	padding 0 0 6px 0
+
+h1
+	font-size: 30px
+	margin 15px
+
+h2
+	font-size 25px
+	margin 15px
+
+p
+	@extend .font-paragraph
+	line-height 21px
