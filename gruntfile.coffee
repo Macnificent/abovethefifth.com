@@ -39,6 +39,10 @@ module.exports = (grunt) ->
 					'**/*.svg'
 					'**/*.gif'
 					'**/*.jpg'
+					'**/*.PNG'
+					'**/*.SVG'
+					'**/*.GIF'
+					'**/*.JPG'
 				]
 				dest: '<%= path.dest %>/img'
 
