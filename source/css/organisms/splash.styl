@@ -28,10 +28,12 @@ banner-height = 2420
 		margin-top 20px
 		font-size 16px
 	> div
-		width 300px
+		width 340px
 		height 200px
 
 		@extend .abs-center		
+		@media only screen and (max-width: 350px)
+			width 300px
 		@media only screen and (max-height: 500px)
 			top -190px
 
