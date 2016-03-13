@@ -1,28 +1,39 @@
-banner-width = 1400
-banner-height = 291
+banner-width = 3988
+banner-height = 2420
 
 #splash
-	@extend .box, .box-dark
+	@extend .box, .box-darker
 
 	position relative
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7)
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5)
 
-	@media only screen and (max-width: 1200px)
-		background url("/img/banner.JPG") no-repeat
-		height 291px
+	@media only screen and (max-width: 850px)
+		background url("/img/banner_new_cropped.jpg") no-repeat
+		height 490px
 
-	@media only screen and (min-width: 1200px)
-		background url("/img/banner.JPG") no-repeat
+	@media only screen and (min-width: 850px)
+		background url("/img/banner_new.jpg") no-repeat
 		background-size contain
 		background-repeat no-repeat
 		width 100%
 		height 0
 		padding-top ((banner-height / banner-width) * 100)%
 
+	.social
+		margin-top 80px
+		> a
+			margin 0 15px 0 15px
+			cursor pointer
+	.contact
+		margin-top 20px
+		font-size 16px
 	> div
-		width 310px
+		width 300px
 		height 200px
+
 		@extend .abs-center		
+		@media only screen and (max-height: 500)
+			top 30px
 
 
 #heading
